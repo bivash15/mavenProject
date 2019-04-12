@@ -24,6 +24,6 @@ public class UserServiceImpl implements UserService {
 		if(count==0)
 			return "Invalid Credential";
 		else
-			return "Valid Credential";
+			return "Valid Credential::Logged In Successfully";
 	}
 }
