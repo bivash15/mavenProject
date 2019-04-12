@@ -16,6 +16,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	@Transactional(propagation=Propagation.REQUIRED,readOnly=true)
 	public String validate(UserDTO dto) {
+		System.out.println("This is validate() method");
 		UserBO bo=new UserBO();
 		//convert dto to bo
 		BeanUtils.copyProperties(dto, bo);
